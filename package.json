@@ -1,0 +1,27 @@
+{
+  "name": "doko-ina-mafita-card-generator",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Doko Ina Mafita Digital Membership Card Generator (frontend-only, runs entirely in the browser)",
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test:data": "node scripts/check-data.mjs"
+  },
+  "dependencies": {
+    "html-to-image": "^1.11.11",
+    "lucide-react": "^0.462.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.15",
+    "vite": "^5.4.11"
+  }
+}

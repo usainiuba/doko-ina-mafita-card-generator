@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* defaults; src/config/brand.js overwrites these when the app starts */
+  --dim-primary: #064B2E;
+  --dim-secondary: #087443;
+  --dim-deep: #032D1C;
+  --dim-gold: #D9A441;
+  --dim-gold-light: #F2D27A;
+  --dim-muted: #A8C5B2;
+}
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: #f3f6f4;
+  color: #1f2937;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+:focus-visible { outline: 3px solid var(--dim-gold); outline-offset: 2px; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
